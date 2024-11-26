@@ -1,3 +1,4 @@
 # serofyte.net-redirect
 
-redirect serofyte.net to https://www.serofyte.net
+how i redirect things.
+very basic
