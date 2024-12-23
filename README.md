@@ -1,5 +1,2 @@
 # serofyte.net-redirect
-
-how i redirect things.
-very basic
-some links redirect to tinyurl to count link clicks.
+How I redirect things with my custom domain. Some links redirect to tinyurl to count link clicks for my curiosity.
