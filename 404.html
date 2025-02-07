@@ -18,7 +18,7 @@
       "whale": "https://tinyurl.com/serofyte-whale-new",
       "whalepromax": "https://tinyurl.com/serofyte-whale-pro-max"
     };
-    const path = window.location.pathname.replace(/^\/+/, "");
+    const path = window.location.pathname.replace(/^\/+|\/+$/g, "").toLowerCase();
     if (redirectMap[path]) {
       window.location.href = redirectMap[path];
     } else {
@@ -27,6 +27,11 @@
   </script>
 </head>
   <body>
-    invalid redirect, or you have javascript disabled
+    Invalid redirect/link. Would you like to go to <a href="https://www.serofyte.net">site homepage</a>.
   </body>
+  <noscript>
+    <body>
+      Javascript is required for redirecting. Please enable javascript.
+    </body>
+  </noscript>
 </html>
