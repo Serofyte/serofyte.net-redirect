@@ -28,18 +28,71 @@
     if (redirectMap[path]) {
       window.location.href = redirectMap[path];
     } else {
-      document.body.innerHTML = "<h1>404: Page not found</h1>";
+      document.body.innerHTML = `
+        <div class="center">
+          <h1 class="site-title">Serofyte.net</h1>
+          <h2>404: Page not found</h2>
+          <p class="line">Invalid redirect. Would you like to go to <a href="https://www.serofyte.net">site home</a>?</p>
+          <p class="line">Github repo: <a href="https://github.com/Serofyte/serofyte.net-redirect">view</a></p>
+        </div>
+      `;
     }
   </script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #0e0e0e;
+      color: #e0e0e0;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    a { color: #7faeff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .center { display: flex; flex-direction: column; align-items: center; }
+    .site-title {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+      color: #e0e0e0;
+    }
+    .line {
+      display: block;
+      margin: 0.6em 0;
+    }
+  </style>
 </head>
-  <body>
-  <p>Invalid redirect. Would you like to go to <a href="https://www.serofyte.net">site home</a>?</p>
-    <p>Github repo: <a href="https://github.com/Serofyte/serofyte.net-redirect">view</a></p>
+<body>
+  <div class="center">
+    <h1 class="site-title">Serofyte.net</h1>
+    <p class="line">Invalid redirect. Would you like to go to <a href="https://www.serofyte.net">site home</a>?</p>
+    <p class="line">Github repo: <a href="https://github.com/Serofyte/serofyte.net-redirect">view</a></p>
+  </div>
+
   <noscript>
     <style>
-      body { display: block !important; }
+      html, body {
+        height: 100%;
+        margin: 0;
+        background: #0e0e0e;
+        color: #e0e0e0;
+        font-family: system-ui, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      a { color: #7faeff; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .center { display: flex; flex-direction: column; align-items: center; }
+      h1 { color: #e0e0e0; margin-bottom: 0.5em; }
     </style>
-    <h1>JavaScript is required for redirects. Please enable JavaScript.</h1>
+    <div class="center">
+      <h1>Serofyte.net</h1>
+      <h2>JavaScript is required for redirects. Please enable JavaScript.</h2>
+    </div>
   </noscript>
-  </body>
+</body>
 </html>
